@@ -1,0 +1,17 @@
+body {
+    font-family: Arial;
+}
+
+.form-box {
+    width: 300px;
+    margin: 50px auto;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+button {
+    padding: 10px 20px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Array Methods</h2>
+<div id="result"></div>
+
+<script>
+let fruits = ["Apple", "Banana", "Mango"];
+
+fruits.push("Orange");       // Add
+fruits.pop();                // Remove last element
+fruits.sort();               // Sort
+
+let upper = fruits.map(function(fruit) {
+    return fruit.toUpperCase();
+});
+
+let filtered = fruits.filter(function(fruit) {
+    return fruit.length > 5;
+});
+
+document.getElementById("result").innerHTML =
+    "Array: " + fruits +
+    "<br>Map: " + upper +
+    "<br>Filter: " + filtered;
+</script>
+
+</body>
+</html>

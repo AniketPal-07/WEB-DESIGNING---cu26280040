@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Newsletter Subscription</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .newsletter {
+            width: 350px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .input-box {
+            position: relative;
+            margin-top: 30px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            box-sizing: border-box;
+            border: 2px solid gray;
+        }
+
+        label {
+            position: absolute;
+            left: 10px;
+            top: 12px;
+            color: gray;
+            background: white;
+            padding: 0 5px;
+            transition: 0.3s;
+        }
+
+        /* Move label up when input is focused */
+        input:focus + label,
+        input:not(:placeholder-shown) + label {
+            top: -10px;
+            font-size: 13px;
+            color: blue;
+        }
+
+        input:focus {
+            border-color: blue;
+            outline: none;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: blue;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="newsletter">
+
+    <h2>Subscribe to Our Newsletter</h2>
+
+    <div class="input-box">
+
+        <input type="email" id="email"
+               placeholder=" ">
+
+        <label for="email">Enter your email</label>
+
+    </div>
+
+    <button>Subscribe</button>
+
+</div>
+
+</body>
+</html>

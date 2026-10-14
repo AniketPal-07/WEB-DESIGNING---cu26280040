@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="Q1.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Registration Form</h1>
+
+        <form action="#" method="post">
+
+            <!-- Text Input -->
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your full name" required>
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"
+                   placeholder="Enter your password" required>
+
+            <!-- Radio Buttons -->
+            <label>Gender</label>
+            <div class="options">
+                <label>
+                    <input type="radio" name="gender" value="male">
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="female">
+                    Female
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="other">
+                    Other
+                </label>
+            </div>
+
+            <!-- Checkboxes -->
+            <label>Hobbies</label>
+            <div class="options">
+                <label>
+                    <input type="checkbox" name="hobbies" value="reading">
+                    Reading
+                </label>
+
+                <label>
+                    <input type="checkbox" name="hobbies" value="sports">
+                    Sports
+                </label>
+
+                <label>
+                    <input type="checkbox" name="hobbies" value="music">
+                    Music
+                </label>
+            </div>
+
+            <!-- Dropdown Select -->
+            <label for="course">Select Course</label>
+            <select id="course" name="course">
+                <option value="">-- Choose a course --</option>
+                <option value="html">HTML & CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+            </select>
+
+            <!-- Textarea -->
+            <label for="message">About Yourself</label>
+            <textarea id="message" name="message"
+                      rows="5"
+                      placeholder="Write something about yourself..."></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+</body>
+</html>

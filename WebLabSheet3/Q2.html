@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+    
+<h2>Prime or Composite</h2>
+<div id="result"></div>
+
+<script>
+function checkNumber(num) {
+    let count = 0;
+
+    for (let i = 1; i <= num; i++) {
+        if (num % i == 0) {
+            count++;
+        }
+    }
+
+    if (count == 2) {
+        document.getElementById("result").innerHTML = num + " is Prime";
+    } else {
+        document.getElementById("result").innerHTML = num + " is Composite";
+    }
+}
+
+let n = Number(prompt("Enter a number:"));
+checkNumber(n);
+</script>
+
+</body>
+</html>

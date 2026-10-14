@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JSON Exception Handling</h2>
+<p id="result"></p>
+
+<script>
+try {
+    let text = '{"name":"Rahul","age":20}';
+
+    let student = JSON.parse(text);
+
+    document.getElementById("result").innerHTML =
+        "Name: " + student.name +
+        "<br>Age: " + student.age;
+}
+catch (error) {
+    document.getElementById("result").innerHTML =
+        "Invalid JSON";
+}
+finally {
+    console.log("Program completed");
+}
+</script>
+
+</body>
+</html>

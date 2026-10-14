@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .payment {
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: blue;
+            color: white;
+            border: none;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .payment {
+                width: 90%;
+            }
+
+            input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="payment">
+    <h2>Payment Checkout</h2>
+
+    <input type="text" placeholder="Card Holder Name">
+    <input type="text" placeholder="Card Number">
+    <input type="text" placeholder="MM/YY">
+    <input type="number" placeholder="CVV">
+
+    <button>Pay Now</button>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>ES6 Features</h2>
+<div id="result"></div>
+
+<script>
+let student = {
+    name: "Aman",
+    age: 21
+};
+
+// Destructuring
+let {name, age} = student;
+
+// Arrow function
+let greet = (name) => {
+    return `Hello ${name}`;
+};
+
+// Template literal
+document.getElementById("result").innerHTML =
+    `${greet(name)}<br>Age: ${age}`;
+</script>
+
+</body>
+</html>

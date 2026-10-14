@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Upload Form</title>
+
+    <style>
+        form {
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+
+        input {
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px 25px;
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+
+            /* Smooth transition */
+            transition: 0.3s;
+        }
+
+        /* Mouse over button */
+        button:hover {
+            background-color: darkgreen;
+            transform: scale(1.05);
+        }
+
+        /* When button is clicked */
+        button:active {
+            background-color: red;
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+    <h2>Upload File</h2>
+
+    <label>Select File:</label>
+    <input type="file">
+
+    <br>
+
+    <button type="submit">Upload</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Keyboard Event</h2>
+
+<p id="result">Press any key...</p>
+
+<script>
+document.addEventListener("keydown", function(event) {
+    document.getElementById("result").innerHTML =
+        "Key: " + event.key +
+        "<br>Key Code: " + event.code;
+});
+
+document.addEventListener("keyup", function(event) {
+    console.log("Key released: " + event.key);
+});
+</script>
+
+</body>
+</html>

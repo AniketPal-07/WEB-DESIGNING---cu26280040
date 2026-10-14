@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox Frame Layout</title>
+
+    <style>
+       * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Main container */
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Header */
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Middle section */
+        .middle {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 200px;
+            background-color: #ddd;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 10px;
+            color: blue;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #bbb;
+        }
+
+        /* Main content */
+        .content {
+            flex: 1;
+            padding: 30px;
+            background-color: #f5f5f5;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <h1>My Website</h1>
+        </div>
+
+        <!-- Sidebar + Content -->
+        <div class="middle">
+
+            <div class="sidebar">
+                <h3>Menu</h3>
+
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="content">
+                <h2>Welcome</h2>
+                <p>
+                    This is the main content area.
+                    Flexbox is used instead of HTML frames.
+                </p>
+            </div>
+        </div>
+</body>
+</html>

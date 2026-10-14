@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+
+    <style>
+        form {
+            width: 450px;
+            margin: 30px auto;
+        }
+
+        fieldset {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 2px solid blue;
+        }
+
+        legend {
+            font-weight: bold;
+            color: blue;
+            padding: 5px 10px;
+        }
+
+        input {
+            margin: 8px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        Name:
+        <input type="text"><br>
+
+        Email:
+        <input type="email">
+    </fieldset>
+
+    <fieldset>
+    <legend>Experience</legend>
+        <input type="radio" name="exp"> Beginner
+        <input type="radio" name="exp"> Intermediate
+        <input type="radio" name="exp"> Advanced
+    </fieldset>
+
+    <fieldset>
+        <legend>Your Opinion</legend>
+
+        <p>How was our service?</p>
+
+        <input type="radio" name="service"> Good
+        <input type="radio" name="service"> Average
+        <input type="radio" name="service"> Poor
+    </fieldset>
+
+    <button type="submit">Submit Survey</button>
+
+</form>
+
+</body>
+</html>

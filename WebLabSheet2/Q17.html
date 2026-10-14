@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hidden Data Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+
+        input {
+            padding: 8px;
+            margin: 8px;
+        }
+
+        button {
+            padding: 8px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>User Form</h2>
+
+<form>
+
+    <input type="text" name="username" placeholder="Enter username">
+
+    <input type="email" name="email" placeholder="Enter email">
+
+    <!-- Hidden session information -->
+    <input type="hidden" name="session_id" value="ABC123">
+    <input type="hidden" name="user_id" value="101">
+
+    <br>
+
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>

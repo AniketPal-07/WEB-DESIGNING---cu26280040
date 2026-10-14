@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Box</title>
+
+    <style>
+        .search {
+            width: 150px;
+            padding: 10px;
+            border: 2px solid gray;
+            border-radius: 20px;
+
+            /* Smooth animation */
+            transition: width 0.5s;
+        }
+
+        /* Expand when clicked */
+        .search:focus {
+            width: 300px;
+            border-color: blue;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Search</h2>
+
+<input type="text" class="search" placeholder="Search here...">
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Range Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 40px;
+        }
+
+        input {
+            margin: 10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+<h2>Choose Temperature</h2>
+
+<input type="range" id="range" min="0" max="100" value="50">
+
+<input type="number" id="number" value="50">
+
+<span>°C</span>
+
+<script>
+    let range = document.getElementById("range");
+    let number = document.getElementById("number");
+
+    range.oninput = function() {
+        number.value = range.value;
+    };
+
+    number.oninput = function() {
+        range.value = number.value;
+    };
+</script>
+
+</body>
+</html>

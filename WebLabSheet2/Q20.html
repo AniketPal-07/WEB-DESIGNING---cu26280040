@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Onboarding Form</title>
+
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .form {
+            width: 350px;
+            margin: 40px auto;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+
+        /* Step 2 is hidden initially */
+        #step2 {
+            display: none;
+        }
+
+        /* Step 3 is hidden initially */
+        #step3 {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form">
+
+    <!-- Step 1 -->
+    <div id="step1">
+        <h2>Step 1: Personal Information</h2>
+
+        <input type="text" placeholder="Enter your name">
+        <input type="email" placeholder="Enter your email">
+
+        <button onclick="nextStep(1)">Next</button>
+    </div>
+
+
+    <!-- Step 2 -->
+    <div id="step2">
+        <h2>Step 2: Account Information</h2>
+
+        <input type="text" placeholder="Enter username">
+        <input type="password" placeholder="Enter password">
+
+        <button onclick="nextStep(2)">Next</button>
+    </div>
+
+
+    <!-- Step 3 -->
+    <div id="step3">
+        <h2>Step 3: Complete</h2>
+
+        <p>Your registration is complete!</p>
+
+        <button onclick="finish()">Finish</button>
+    </div>
+
+</div>
+
+<script>
+    function nextStep(step) {
+
+        if (step == 1) {
+            document.getElementById("step1").style.display = "none";
+            document.getElementById("step2").style.display = "block";
+        }
+
+        if (step == 2) {
+            document.getElementById("step2").style.display = "none";
+            document.getElementById("step3").style.display = "block";
+        }
+    }
+
+    function finish() {
+        alert("Welcome!");
+    }
+</script>
+
+</body>
+</html>

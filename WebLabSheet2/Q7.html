@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Form</title>
+
+    <style>
+        form {
+            width: 400px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        /* Change color when clicked */
+        input:focus, textarea:focus {
+            border: 2px solid blue;
+            background-color: #eaf3ff;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<form>
+    <h2>Feedback Form</h2>
+
+    <label>Name:</label>
+    <input type="text" placeholder="Enter your name">
+
+    <label>Email:</label>
+    <input type="email" placeholder="Enter your email">
+
+    <label>Feedback:</label>
+    <textarea rows="4" placeholder="Write your feedback"></textarea>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

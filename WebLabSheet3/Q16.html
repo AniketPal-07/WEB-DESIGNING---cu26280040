@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Image Gallery</h2>
+
+<img id="image" width="300" height="200">
+
+<br><br>
+
+<button id="previous">Previous</button>
+<button id="next">Next</button>
+
+<script>
+let images = [
+    "https://picsum.photos/id/1015/300/200",
+    "https://picsum.photos/id/1016/300/200",
+    "https://picsum.photos/id/1018/300/200"
+];
+
+let index = 0;
+
+let image = document.getElementById("image");
+
+image.src = images[index];
+
+document.getElementById("next").addEventListener("click", function() {
+    index++;
+
+    if (index >= images.length) {
+        index = 0;
+    }
+
+    image.src = images[index];
+});
+
+document.getElementById("previous").addEventListener("click", function() {
+    index--;
+
+    if (index < 0) {
+        index = images.length - 1;
+    }
+
+    image.src = images[index];
+});
+</script>
+
+</body>
+</html>

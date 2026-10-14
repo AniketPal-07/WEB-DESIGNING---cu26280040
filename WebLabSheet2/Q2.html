@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration</title>
+    <link rel="stylesheet" href="Q2.css">
+</head>
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <form>
+
+        <!-- Name -->
+        <label> Student Name:</label>
+        <input type="text"
+               name="name"
+               minlength="3"
+               maxlength="30"
+               pattern="[A-Za-z ]+"
+               required>
+        <br><br>
+
+        <!-- Email -->
+        <label>Email:</label>
+        <input type="email"
+               name="email"
+               required>
+        <br><br>
+
+        <!-- Password -->
+        <label>Password:</label>
+        <input type="password"
+               name="password"
+               minlength="6"
+               maxlength="15"
+               required>
+        <br><br>
+
+        <!-- Phone -->
+        <label>Phone Number:</label>
+        <input type="text"
+               name="phone"
+               pattern="[0-9]{10}"
+               required>
+        <br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male" required> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <br><br>
+
+        
+        <!-- Terms -->
+        <input type="checkbox" required>
+        I agree to the terms and conditions.
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </form>
+
+</body>
+</html>

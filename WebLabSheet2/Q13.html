@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Custom Controls</title>
+
+    <style>
+        /* Hide original controls */
+        input {
+            display: none;
+        }
+
+        label {
+            display: block;
+            margin: 15px;
+            cursor: pointer;
+        }
+
+        /* Custom box */
+        label::before {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            border: 2px solid blue;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        /* Checkbox checked */
+        input[type="checkbox"]:checked + label::after {
+            content: "✓";
+            color: blue;
+            font-size: 20px;
+        }
+
+        /* Radio button */
+        input[type="radio"] + label::before {
+            border-radius: 50%;
+        }
+
+        input[type="radio"]:checked + label::after {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: blue;
+            border-radius: 50%;
+            margin-left: -26px;
+            margin-right: 16px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Choose Options</h2>
+
+<input type="checkbox" id="html">
+<label for="html">HTML</label>
+
+<input type="checkbox" id="css">
+<label for="css">CSS</label>
+
+<h2>Gender</h2>
+
+<input type="radio" name="gender" id="male">
+<label for="male">Male</label>
+
+<input type="radio" name="gender" id="female">
+<label for="female">Female</label>
+
+</body>
+</html>

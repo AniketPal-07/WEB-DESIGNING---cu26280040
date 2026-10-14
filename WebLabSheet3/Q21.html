@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Callback and Asynchronous JavaScript</h2>
+
+<p id="result">Waiting...</p>
+
+<script>
+function message(callback) {
+
+    setTimeout(function() {
+        callback();
+    }, 2000);
+}
+
+function showMessage() {
+    document.getElementById("result").innerHTML =
+        "Hello! This message appeared after 2 seconds.";
+}
+
+message(showMessage);
+</script>
+
+</body>
+</html>

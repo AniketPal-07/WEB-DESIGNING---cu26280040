@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            gap: 30px;
+            padding: 30px;
+        }
+
+        .form, .location {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid gray;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: blue;
+            color: white;
+            border: none;
+        }
+
+        /* Mobile screen */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<h1 style="text-align:center;">Contact Us</h1>
+
+<div class="container">
+
+    <div class="form">
+        <h2>Send Message</h2>
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <textarea rows="5" placeholder="Your Message"></textarea>
+
+        <button>Send</button>
+    </div>
+
+    <div class="location">
+        <h2>Our Location</h2>
+
+        <p>ABC Company</p>
+        <p>123 Main Street</p>
+        <p>New Delhi, India</p>
+        <p>Phone: 9876543210</p>
+        <p>Email: abc@example.com</p>
+    </div>
+
+</div>
+
+</body>
+</html>

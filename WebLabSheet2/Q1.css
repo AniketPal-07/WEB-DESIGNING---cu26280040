@@ -1,0 +1,140 @@
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Page styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* Form container */
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+
+    padding: 30px;
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 25px;
+}
+
+/* Labels */
+form > label {
+    display: block;
+    font-weight: bold;
+    color: #444444;
+    margin-top: 15px;
+    margin-bottom: 7px;
+}
+
+/* Text input, password, select and textarea */
+input[type="text"],
+input[type="password"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+    outline: none;
+
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Focus effect */
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.4);
+}
+
+/* Textarea */
+textarea {
+    resize: vertical;
+}
+
+/* Radio buttons and checkboxes container */
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    margin-bottom: 10px;
+}
+
+/* Radio and checkbox labels */
+.options label {
+    font-weight: normal;
+    color: #555555;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Radio buttons and checkboxes */
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: #667eea;
+}
+
+/* Submit button */
+button {
+    width: 100%;
+    padding: 13px;
+
+    margin-top: 25px;
+
+    background-color: #062fe6;
+    color: white;
+
+    border: none;
+    border-radius: 6px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover */
+button:hover {
+    background-color: #5568d8;
+}
+
+/* Mobile responsive design */
+@media (max-width: 500px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    .options {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
